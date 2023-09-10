@@ -17,9 +17,16 @@ import {
 // You can use a Zod schema here if you want.
 export type Payment = {
   id: string
-  amount: number
-  status: "pending" | "processing" | "success" | "failed"
-  email: string
+  provider: string
+  customer: string
+  iccid: number
+  imei: number
+  ip: string
+  mac: string
+  license: string
+  mfg: string
+  status: "Active" | "Suspended" | "Deactive"
+  lastconnect: string
 }
 
 export const columns: ColumnDef<Payment>[] = [
@@ -43,38 +50,86 @@ export const columns: ColumnDef<Payment>[] = [
     enableHiding: false,
   },
   {
+    accessorKey: "provider",
+    header: "Provider",
+    cell: ({ row }) => {
+      const provider = row.getValue("provider") as string
+      return <img src={provider} alt="atnt" className="w-16 h-8" />
+    },
+  },
+  {
+    accessorKey: "customer",
+    header: "Customer",
+  },
+  {
+    accessorKey: "iccid",
+    header: "ICCID",
+  },
+  {
+    accessorKey: "imei",
+    header: "IMEI",
+  },
+  {
+    accessorKey: "ip",
+    header: "IP Address",
+  },
+  {
+    accessorKey: "mac",
+    header: "MAC Address",
+  },
+  {
+    accessorKey: "license",
+    header: "License Status",
+    cell: ({ row }) => {
+      const license = row.getValue("license") as string
+      return (
+        <div className="flex justify-center">
+          <div className={`bg-${license}-500 w-6 h-6 rounded-full`}></div>
+        </div>
+      )
+    },
+  },
+  {
+    accessorKey: "mfg",
+    header: "Device Mfg",
+    cell: ({ row }) => {
+      const mfg = row.getValue("mfg") as string
+      return <img src={mfg} alt="atnt" className="w-16 h-8" />
+    },
+  },
+  {
     accessorKey: "status",
     header: "Status",
   },
   {
-    accessorKey: "email",
-    // header: "Email",
+    accessorKey: "lastconnect",
+    // header: "Last Connect",
     header: ({ column }) => {
       return (
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
         >
-          Email
+          Last Connect
           <ArrowUpDown className="ml-2 h-4 w-4" />
         </Button>
       )
     },
   },
-  {
-    accessorKey: "amount",
-    // header: "Amount",
-    header: () => <div className="text-right">Amount</div>,
-    cell: ({ row }) => {
-      const amount = parseFloat(row.getValue("amount"))
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
-      }).format(amount)
+  // {
+  //   accessorKey: "amount",
+  //   // header: "Amount",
+  //   header: () => <div className="text-right">Amount</div>,
+  //   cell: ({ row }) => {
+  //     const amount = parseFloat(row.getValue("amount"))
+  //     const formatted = new Intl.NumberFormat("en-US", {
+  //       style: "currency",
+  //       currency: "USD",
+  //     }).format(amount)
 
-      return <div className="text-right font-medium">{formatted}</div>
-    },
-  },
+  //     return <div className="text-right font-medium">{formatted}</div>
+  //   },
+  // },
   {
     accessorKey: "actions",
     cell: ({ row }) => {
