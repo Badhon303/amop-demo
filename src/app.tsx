@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider"
-import { DeviceManagement } from "@/device-management/deviceManagement"
+import { DeviceManagement } from "@/device-management/device-management"
 
 export function App() {
   return (
