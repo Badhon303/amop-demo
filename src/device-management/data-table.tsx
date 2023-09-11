@@ -80,7 +80,7 @@ export function DataTable<TData, TValue>({
           className="max-w-sm"
         />
         <Button onClick={() => downloadToExcel()} className="mx-4">
-          Export to Excel
+          Export
         </Button>
         <ModeToggle />
         <DropdownMenu>
