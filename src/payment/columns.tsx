@@ -84,7 +84,15 @@ export const columns: ColumnDef<Payment>[] = [
       const license = row.getValue("license") as string
       return (
         <div className="flex justify-center">
-          <div className={`bg-${license}-500 w-6 h-6 rounded-full`}></div>
+          <div
+            className={`w-6 h-6 rounded-full ${
+              license === "red"
+                ? "bg-red-500"
+                : license === "green"
+                ? "bg-green-500"
+                : "bg-yellow-500"
+            }`}
+          ></div>
         </div>
       )
     },
@@ -148,11 +156,11 @@ export const columns: ColumnDef<Payment>[] = [
             <DropdownMenuItem
               onClick={() => navigator.clipboard.writeText(payment.id)}
             >
-              Copy payment ID
+              Copy Device ID
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>View customer</DropdownMenuItem>
-            <DropdownMenuItem>View payment details</DropdownMenuItem>
+            <DropdownMenuItem>Archive Device</DropdownMenuItem>
+            <DropdownMenuItem>Provision Device</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       )
