@@ -16,7 +16,7 @@ export function DeviceManagement() {
 
   return (
     <div className="mx-10 mt-5">
-      <h1 className="text-3xl font-bold mb-5">Device Management inventory</h1>
+      <h1 className="text-3xl font-bold mb-5">Device Management Inventory</h1>
       <DataTable columns={columns} data={data} />
     </div>
   )
