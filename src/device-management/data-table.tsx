@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { ModeToggle } from "@/components/mode-toggle"
 
 import { downloadToExcel } from "@/lib/xlsx"
 
@@ -78,9 +79,10 @@ export function DataTable<TData, TValue>({
           }
           className="max-w-sm"
         />
-        <Button onClick={() => downloadToExcel()} className="ml-4">
+        <Button onClick={() => downloadToExcel()} className="mx-4">
           Export to Excel
         </Button>
+        <ModeToggle />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-auto">
