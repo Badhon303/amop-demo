@@ -1,6 +1,6 @@
-import { Payment } from "@/payment/columns"
+import { Device } from "@/device-management/columns"
 
-export default async function getPaymentData(): Promise<Payment[]> {
+export default async function getDeviceData(): Promise<Device[]> {
   // Fetch data from your API here.
   return [
     {
@@ -83,7 +83,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-21 10:04:44 CST",
     },
     {
-      id: "1",
+      id: "7",
       provider: "/veri.png",
       customer: "(300006901)Oxen Enterprise LLC",
       iccid: 721480870894360343,
@@ -96,7 +96,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-18 01:11:12 CST",
     },
     {
-      id: "2",
+      id: "8",
       provider: "/atnt.png",
       customer: "(300007220) HCBS Of Georgia",
       iccid: 521488575894360380,
@@ -109,7 +109,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-08 10:52:03 CST",
     },
     {
-      id: "3",
+      id: "9",
       provider: "/veri.png",
       customer: "(300007455) Conecuh Sausage Co lnc",
       iccid: 331488967894360387,
@@ -123,7 +123,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
     },
 
     {
-      id: "4",
+      id: "10",
       provider: "/atnt.png",
       customer: "(300006013) Eastern Shore cycle",
       iccid: 981456700894360339,
@@ -136,7 +136,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-05-19 13:28:49 CST",
     },
     {
-      id: "5",
+      id: "11",
       provider: "/veri.png",
       customer: "(300007027) McKenzie Farms",
       iccid: 863480628894360343,
@@ -149,7 +149,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-07 08:21:35 CST",
     },
     {
-      id: "6",
+      id: "12",
       provider: "/atnt.png",
       customer: "(300006708) Gulfstream Services",
       iccid: 981480754894360399,
@@ -162,7 +162,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-21 10:04:44 CST",
     },
     {
-      id: "1",
+      id: "13",
       provider: "/veri.png",
       customer: "(300006901)Oxen Enterprise LLC",
       iccid: 721480870894360343,
@@ -175,7 +175,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-18 01:11:12 CST",
     },
     {
-      id: "2",
+      id: "14",
       provider: "/atnt.png",
       customer: "(300007220) HCBS Of Georgia",
       iccid: 521488575894360380,
@@ -188,7 +188,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-08 10:52:03 CST",
     },
     {
-      id: "3",
+      id: "15",
       provider: "/veri.png",
       customer: "(300007455) Conecuh Sausage Co lnc",
       iccid: 331488967894360387,
@@ -202,7 +202,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
     },
 
     {
-      id: "4",
+      id: "16",
       provider: "/atnt.png",
       customer: "(300006013) Eastern Shore cycle",
       iccid: 981456700894360339,
@@ -215,7 +215,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-05-19 13:28:49 CST",
     },
     {
-      id: "5",
+      id: "17",
       provider: "/veri.png",
       customer: "(300007027) McKenzie Farms",
       iccid: 863480628894360343,
@@ -228,7 +228,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-07 08:21:35 CST",
     },
     {
-      id: "6",
+      id: "18",
       provider: "/atnt.png",
       customer: "(300006708) Gulfstream Services",
       iccid: 981480754894360399,
@@ -241,7 +241,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-21 10:04:44 CST",
     },
     {
-      id: "1",
+      id: "19",
       provider: "/veri.png",
       customer: "(300006901)Oxen Enterprise LLC",
       iccid: 721480870894360343,
@@ -254,7 +254,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-18 01:11:12 CST",
     },
     {
-      id: "2",
+      id: "20",
       provider: "/atnt.png",
       customer: "(300007220) HCBS Of Georgia",
       iccid: 521488575894360380,
@@ -267,7 +267,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-08 10:52:03 CST",
     },
     {
-      id: "3",
+      id: "21",
       provider: "/veri.png",
       customer: "(300007455) Conecuh Sausage Co lnc",
       iccid: 331488967894360387,
@@ -281,7 +281,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
     },
 
     {
-      id: "4",
+      id: "22",
       provider: "/atnt.png",
       customer: "(300006013) Eastern Shore cycle",
       iccid: 981456700894360339,
@@ -294,7 +294,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-05-19 13:28:49 CST",
     },
     {
-      id: "5",
+      id: "23",
       provider: "/veri.png",
       customer: "(300007027) McKenzie Farms",
       iccid: 863480628894360343,
@@ -307,7 +307,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-07 08:21:35 CST",
     },
     {
-      id: "6",
+      id: "24",
       provider: "/atnt.png",
       customer: "(300006708) Gulfstream Services",
       iccid: 981480754894360399,
@@ -320,7 +320,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-21 10:04:44 CST",
     },
     {
-      id: "1",
+      id: "25",
       provider: "/veri.png",
       customer: "(300006901)Oxen Enterprise LLC",
       iccid: 721480870894360343,
@@ -333,7 +333,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-18 01:11:12 CST",
     },
     {
-      id: "2",
+      id: "26",
       provider: "/atnt.png",
       customer: "(300007220) HCBS Of Georgia",
       iccid: 521488575894360380,
@@ -346,7 +346,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-08 10:52:03 CST",
     },
     {
-      id: "3",
+      id: "27",
       provider: "/veri.png",
       customer: "(300007455) Conecuh Sausage Co lnc",
       iccid: 331488967894360387,
@@ -360,7 +360,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
     },
 
     {
-      id: "4",
+      id: "28",
       provider: "/atnt.png",
       customer: "(300006013) Eastern Shore cycle",
       iccid: 981456700894360339,
@@ -373,7 +373,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-05-19 13:28:49 CST",
     },
     {
-      id: "5",
+      id: "29",
       provider: "/veri.png",
       customer: "(300007027) McKenzie Farms",
       iccid: 863480628894360343,
@@ -386,7 +386,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-07 08:21:35 CST",
     },
     {
-      id: "6",
+      id: "30",
       provider: "/atnt.png",
       customer: "(300006708) Gulfstream Services",
       iccid: 981480754894360399,
@@ -399,7 +399,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-21 10:04:44 CST",
     },
     {
-      id: "1",
+      id: "31",
       provider: "/veri.png",
       customer: "(300006901)Oxen Enterprise LLC",
       iccid: 721480870894360343,
@@ -412,7 +412,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-07-18 01:11:12 CST",
     },
     {
-      id: "2",
+      id: "32",
       provider: "/atnt.png",
       customer: "(300007220) HCBS Of Georgia",
       iccid: 521488575894360380,
@@ -425,7 +425,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-08 10:52:03 CST",
     },
     {
-      id: "3",
+      id: "33",
       provider: "/veri.png",
       customer: "(300007455) Conecuh Sausage Co lnc",
       iccid: 331488967894360387,
@@ -439,7 +439,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
     },
 
     {
-      id: "4",
+      id: "34",
       provider: "/atnt.png",
       customer: "(300006013) Eastern Shore cycle",
       iccid: 981456700894360339,
@@ -452,7 +452,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-05-19 13:28:49 CST",
     },
     {
-      id: "5",
+      id: "35",
       provider: "/veri.png",
       customer: "(300007027) McKenzie Farms",
       iccid: 863480628894360343,
@@ -465,7 +465,7 @@ export default async function getPaymentData(): Promise<Payment[]> {
       lastconnect: "2023-08-07 08:21:35 CST",
     },
     {
-      id: "6",
+      id: "36",
       provider: "/atnt.png",
       customer: "(300006708) Gulfstream Services",
       iccid: 981480754894360399,

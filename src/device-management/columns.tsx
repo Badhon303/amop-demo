@@ -15,7 +15,7 @@ import {
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
-export type Payment = {
+export type Device = {
   id: string
   provider: string
   customer: string
@@ -29,7 +29,7 @@ export type Payment = {
   lastconnect: string
 }
 
-export const columns: ColumnDef<Payment>[] = [
+export const columns: ColumnDef<Device>[] = [
   {
     id: "select",
     header: ({ table }) => (
@@ -141,7 +141,7 @@ export const columns: ColumnDef<Payment>[] = [
   {
     accessorKey: "actions",
     cell: ({ row }) => {
-      const payment = row.original
+      const device = row.original
 
       return (
         <DropdownMenu>
@@ -154,7 +154,7 @@ export const columns: ColumnDef<Payment>[] = [
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Actions</DropdownMenuLabel>
             <DropdownMenuItem
-              onClick={() => navigator.clipboard.writeText(payment.id)}
+              onClick={() => navigator.clipboard.writeText(device.id)}
             >
               Copy Device ID
             </DropdownMenuItem>

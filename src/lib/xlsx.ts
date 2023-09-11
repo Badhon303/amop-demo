@@ -1,8 +1,8 @@
 import xlsx, { IJsonSheet } from "json-as-xlsx"
-import getPaymentData from "@/actions/getPayments"
+import getDeviceData from "@/actions/getDevicesData"
 
 export async function downloadToExcel() {
-  const data = await getPaymentData()
+  const data = await getDeviceData()
 
   let columns: IJsonSheet[] = [
     {

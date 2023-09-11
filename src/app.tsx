@@ -1,14 +1,14 @@
-import { Payment, columns } from "@/payment/columns"
-import { DataTable } from "@/payment/data-table"
+import { Device, columns } from "@/device-management/columns"
+import { DataTable } from "@/device-management/data-table"
 import { useEffect, useState } from "preact/compat"
-import getPaymentData from "@/actions/getPayments"
+import getDeviceData from "@/actions/getDevicesData"
 
 export function App() {
-  const [data, setData] = useState<Payment[]>([])
+  const [data, setData] = useState<Device[]>([])
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getPaymentData()
+      const data = await getDeviceData()
       console.log("data: ", data)
       setData(data)
     }
